@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIFYV | Web Player: Tuning Into the Beat of Your World</title>
+
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <img class="invert close" src="./images/svg/close.svg" alt="close">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="100px" src="./images/svg/logo.svg" alt="logo" class="invert"></div>
+                <ul>
+                    <li><img src="./images/svg/home.svg" alt="home" class="invert">Home</li>
+                    <li><img src="./images/svg/search.svg" alt="search" class="invert">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="./images/svg/playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img width="40" class="invert hamburger" src="./images/svg/hamburger.svg" alt="hamburger">
+                    <img width="25" class="invert" src="./images/svg/leftArrow.svg" alt="leftArrow">
+                    <img width="25" class="invert" src="./images/svg/rightArrow.svg" alt="rightArrow">
+                </div>
+                <div class="buttons">
+                    <button class="signUpBtn">Sign up</button>
+                    <button class="loginBtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>MusiFyv Playlists</h1>
+                <div class="cardContainer">
+                </div>
+            </div>
+
+            <div class="playbar rounded invert">
+                <div class="abovebar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img width="25" src="./images/svg/songButtons/previous.svg" alt="previous" id="previousButton">
+                        <img width="25" src="./images/svg/songButtons/play.svg" alt="play" id="playButton">
+                        <img width="25" src="./images/svg/songButtons/next.svg" alt="next" id="nextButton">
+                    </div>
+                    <div class="songtime"></div>
+                </div>
+                <input type="range" id="seekbar" min="0" max="100" value="0">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<img src="./images/svg/play.svg" alt="">
+
+</html>
